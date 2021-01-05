@@ -10,50 +10,67 @@ h1 {
 }
 
 /** HEADER **/
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-  border: 1px solid #000 !important;
-}
-#header-nav{
-  background-color:#a7d2c8;  
-  border:1px solid #000; 
+#header-nav {
+  background-color: #a7d2c8;
   border-radius: 0;
+  border: 0;
+
 }
-.navbar-brand{
-  margin-top: 10px;
-  padding-top:10px;
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
-.navbar-nav{
-  margin:0 -15px !important;
+
+.navbar-brand {
+  padding-top: 25px;
 }
-.navbar-brand h1{
+
+.navbar-brand h1 { /* Restaurant name */
   color: #000;
   font-size: 1.5em;
+  text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  margin-left: 15px;
 }
-.navbar-brand a:hover, .navbar-brand a:focus{
-  text-decoration: none;  
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
-#nav-list{
-  border:0px solid;
+
+.navbar-collapse .navbar-nav #nav-list {
+  margin-top: 10px;
+  width: 100%
+  margin-left: 0px;
+  margin-right: 0px;
 }
-#nav-list:nth-child(3){
-  border-bottom:0;
-}
+
 #nav-list li{
   background:#fff;
-  border-bottom:1px solid;
 }
-#nav-list li:nth-child(3){
-  border-bottom:0;
+
+#nav-list a {
+  color: #874c62;
+  text-align: center;
+  border: 1px solid #61122f;
 }
-#nav-list li a{
-  color:#000;
-  font-weight: 600;
-  line-height: 8px
+#nav-list a:hover {
+  background: #c98474;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
 /* END HEADER */
 
