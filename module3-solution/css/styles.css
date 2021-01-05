@@ -1,0 +1,132 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #f2d388;
+  font-family: 'Sahitya', serif;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #a7d2c8;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #874c62;
+  text-align: center;
+  border: 1px solid #61122f;
+}
+#nav-list a:hover {
+  background: #c98474;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+.menu-item-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-item-tile {
+  margin-bottom: 25px;
+  background-color: #a7d2c8;
+  width: 100%;
+  height: 1000px;
+
+}
+
+.container {
+	margin-top: 30px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: left;
+ }
+
+.nav-list{
+	color: blue;
+	opacity: 50%;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/********** from Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) {
+	.menu-item-tile {
+ 	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+.container {
+    width: 60%;
+ }
+}
+
+
+@media (min-width: 768px) {
+   #nav-list {
+       display: none !important;
+       color: black;
+   }
+}
+
+}
