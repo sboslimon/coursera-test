@@ -60,7 +60,7 @@ function MenuSearchService($http, ApiBasePath) {
     var items = [];
     return $http({
       method: "GET",
-      url: (ApiBasePath + "/categories.json"),
+      url: (ApiBasePath + "/menu_item.json"),
     })
     .then(function (result) {
       // process result and only keep items that match
