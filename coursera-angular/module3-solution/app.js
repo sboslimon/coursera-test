@@ -65,14 +65,12 @@ function MenuSearchService($http, ApiBasePath) {
     .then(function (result) {
       // process result and only keep items that match
       var items = result.data.menu_items;
-      console.log(items);
       foundItems = [];
       for (var index = 0; index < items.length; index++) {
-        if (items[index].name.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
-          foundItems.push(items[index].id + " : "+  items[index].name);
+        if (items[index].description.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
+          foundItems.push(items[index].id + " : "+  items[index].name + " ("+ items[index].description+")");
         }
       }
-      console.log(foundItems);
       // return processed items
       return foundItems;
     });
