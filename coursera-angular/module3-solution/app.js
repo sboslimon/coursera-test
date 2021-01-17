@@ -60,18 +60,19 @@ function MenuSearchService($http, ApiBasePath) {
     var items = [];
     return $http({
       method: "GET",
-      url: (ApiBasePath + "/menu_item.json"),
+      url: (ApiBasePath + "/menu_items.json"),
     })
     .then(function (result) {
       // process result and only keep items that match
       var items = result.data.menu_items;
+      console.log(items);
       foundItems = [];
       for (var index = 0; index < items.length; index++) {
-        if (items[index].toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
-          foundItems.push(items[index]);
+        if (items[index].name.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
+          foundItems.push(items[index].id + " : "+  items[index].name);
         }
       }
-
+      console.log(foundItems);
       // return processed items
       return foundItems;
     });
