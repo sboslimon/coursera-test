@@ -64,11 +64,11 @@ function MenuSearchService($http, ApiBasePath) {
     })
     .then(function (result) {
       // process result and only keep items that match
-      var items = result.data;
+      var items = result.data.menu_items;
       foundItems = [];
       for (var index = 0; index < items.length; index++) {
-        if (items[index].name.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
-          foundItems.push(items[index].name);
+        if (items[index].toLowerCase().indexOf(searchTerm.toLowerCase()) != -1) {
+          foundItems.push(items[index]);
         }
       }
 
