@@ -4,6 +4,26 @@
   border: 2px solid #3F0C1F;
 }
 
+.signup_form{
+  color: #3F0C1F;
+}
+
+
+.signup_form_button {
+  border: 1px solid #0066cc;
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.signup_form_button:disabled,
+.signup_form_button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;

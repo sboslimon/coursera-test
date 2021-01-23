@@ -1,0 +1,21 @@
+<div class="container" ng-controller="MyInfoController as myinfoCtrl">
+  <h2 class="text-center">My personnal page</h2>
+
+<div ng-if="myinfoCtrl.login_error">
+        Please signup first to access your personnal information!
+        <a ui-sref="public.sign_up">Sign-up page</a>
+
+  </div>
+  <div ng-if="!myinfoCtrl.login_error">
+          <ol>First name : {{myinfoCtrl.userdata.firstname}}</ol>
+          <ol>Last name : {{myinfoCtrl.userdata.lastname}}</ol>
+          <ol>Email address : {{myinfoCtrl.userdata.email}}</ol>
+          <ol>Phone : {{myinfoCtrl.userdata.phone}}</ol>
+          <ol>Favorite Dish :
+              <div>{{myinfoCtrl.userdata.favorite}}</div>
+              <img class="img-responsive" width="250" height="150"
+              ng-src="{{myinfoCtrl.basePath}}/images/{{myinfoCtrl.userdata.favorite}}.jpg" alt="{{myinfoCtrl.userdata.favorite}}">
+          </ol>
+  </div>
+
+</div>
